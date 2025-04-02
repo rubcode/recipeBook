@@ -9,6 +9,7 @@ import { FaBook } from "react-icons/fa6";
 
 function RecipeBook() {
     const [recipes,setRecipes] = useState([])
+    const [recipesFiltered,setRecipesFiltered] = useState([])
     useEffect(()=>{
         getRecipes().then(({data,isError})=>{
         if(isError){
@@ -16,16 +17,25 @@ function RecipeBook() {
             return
         }
         setRecipes(data)
+        setRecipesFiltered(data)
         });
     },[])
 
     return (
         <Layout>
             <h1 className="title">El recetario de Rub</h1>
-            <ContainerFilters/>
-            <ContainerRecipes 
+            <ContainerFilters
                 recipes={recipes}
+                setRecipesFiltered={setRecipesFiltered} 
             />
+            {
+                (recipesFiltered.length === 0) ? 
+                    <h2>No hay recetas disponibles</h2> :
+                    <ContainerRecipes 
+                        recipes={recipesFiltered}
+                    />
+            }
+            
             <Button 
                 link='addRecipe'
                 text={<FaBook/>}

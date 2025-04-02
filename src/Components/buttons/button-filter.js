@@ -32,7 +32,7 @@ const ButtonFilterStyled = styled.button`
 
 function ButtonFilter({...props}) {
     return (
-        <ButtonFilterStyled className={(props.isActive) ? "active" : ""} type='button'>
+        <ButtonFilterStyled className={(props.isActive) ? "active" : ""} type='button' onClick={props.onClick}>
             {props.icon}
             {props.textFilter}
         </ButtonFilterStyled>

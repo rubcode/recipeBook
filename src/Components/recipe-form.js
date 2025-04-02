@@ -6,7 +6,6 @@ function RecipeForm() {
         <Layout>
             <h1 className="title">Añadir receta</h1>
             <FormRecipe/>
-            <h2 className="title">Ingredientes</h2>
         </Layout>
     )
 }

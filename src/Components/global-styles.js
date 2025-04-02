@@ -37,6 +37,9 @@ const GlobalStylesStyled = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    h1,h2{
+        text-align: center;
+    }
     .title{
         margin: 0;
         font-size: 2rem;
