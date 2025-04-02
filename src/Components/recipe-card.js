@@ -24,6 +24,7 @@ const RecipeCardStyled = styled.div`
     }
     .box-info h2 {
         color: var(--accentColor);
+        font-size: 1.2rem;
     }
 `
 

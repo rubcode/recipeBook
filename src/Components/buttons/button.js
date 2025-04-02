@@ -9,6 +9,7 @@ const ButtonStyled = styled.div`
     min-inline-size: 150px;
     font: var(--button);
     cursor: pointer;
+    opacity: 0.8;
     text-decoration: none !important;
 
     &.buttonRouded{ 
@@ -26,8 +27,7 @@ const ButtonStyled = styled.div`
     }
 
     &:hover{
-        background: var(--white);
-        color: var(--primaryColor)
+        opacity: 1;
     }
 `
 

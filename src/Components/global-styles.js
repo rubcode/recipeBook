@@ -39,18 +39,33 @@ const GlobalStylesStyled = createGlobalStyle`
     }
     .title{
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        font-family: Roboto;
+        color: var(--white);
+        letter-spacing: 2px;
+        padding: 0.5rem 1.5rem;
+        text-align: left;
+        border-radius: 50px;
+        background-color: var(--accentColor);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 400px;
+    }
+    .subtitle{
+        margin: 0;
+        font-size: 2rem;
         font-family: Roboto;
         color: var(--white);
         letter-spacing: 2px;
         padding: 0.5rem;
-        text-align: center;
+        text-align: left;
         border-radius: 50px;
         background-color: var(--accentColor);
         display: flex;
         align-items: center;
         justify-content: center;
-       width: 550px;
+        width: 550px;
     }
     .logo{
         width: 180px;

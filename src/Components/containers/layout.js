@@ -5,7 +5,7 @@ const LayoutStyled = styled.div`
     max-width: 1300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 `
 
 function Layout({children}) {

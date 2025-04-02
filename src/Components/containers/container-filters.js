@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-import ButtonFilter from './buttons/button-filter'
+import ButtonFilter from '../buttons/button-filter'
 import { FaMugHot } from "react-icons/fa";
 import { FaBowlFood } from "react-icons/fa6";
 import { FaPizzaSlice } from "react-icons/fa6";
 import { FaCakeCandles } from "react-icons/fa6";
+import { BiSolidBowlHot } from "react-icons/bi";
 
 const ContainerFiltersStyled = styled.div`
     width: 100%;
@@ -22,6 +23,11 @@ function ContainerFilters() {
                 textFilter='Entradas' 
                 isActive={true} 
                 icon={<FaBowlFood className='icon' />}
+            />
+            <ButtonFilter 
+                textFilter='Sopas' 
+                isActive={false} 
+                icon={<BiSolidBowlHot  className='icon' />}
             />
             <ButtonFilter 
                 textFilter='Fuertes' 

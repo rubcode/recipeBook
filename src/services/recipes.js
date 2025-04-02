@@ -18,3 +18,13 @@ async function fetchHandler(url,options){
 export async function getRecipes(){
     return fetchHandler(`${BASE_API}/recipes`);
 }
+
+export async function addRecipe(recipe){
+    return fetchHandler(`${BASE_API}/recipes`,{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(recipe)
+    })
+}

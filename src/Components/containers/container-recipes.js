@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import RecipeCard from './recipe-card'
+import RecipeCard from '../recipe-card'
 
 const ContainerRecipesStyled = styled.div`
     width: 100%;
