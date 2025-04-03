@@ -36,7 +36,6 @@ function FormRecipe({...props}) {
     });
 
     function handleChange(e){
-        console.log("Evento detectado:", e.target.name, e.target.value); 
         setRecipe({
             ...recipe,
             [e.target.name]: e.target.value
@@ -53,7 +52,6 @@ function FormRecipe({...props}) {
             preparation: formData.get('preparation'),
             status: 1
         }
-        console.log(newRecipe);
         const {data, isError} = await addRecipe(newRecipe)
         if(isError){
             console.log('Ocurrio un error al añadir la receta');
@@ -62,6 +60,7 @@ function FormRecipe({...props}) {
         console.log(data);
         if(data.code === "000"){
             console.log('Receta añadida correctamente');
+            props.setIdRecipe(data.idRecipe)
             form.current.reset()
         }
     }

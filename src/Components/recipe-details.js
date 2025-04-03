@@ -1,5 +1,6 @@
 import Layout from "./containers/layout"
 import ContainerDetails from "./containers/container-details"
+import Nav from "./containers/nav"
 import {useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import {getRecipes} from '../services/recipes'
@@ -21,12 +22,15 @@ function RecipeDetails() {
         });
     },[])
     return (
-        <Layout>
-            <ContainerDetails 
-                recipes={recipes}
-                idRecipe={idRecipe}
-            />
-        </Layout>
+        <>
+            <Nav/>
+            <Layout>
+                <ContainerDetails 
+                    recipes={recipes}
+                    idRecipe={idRecipe}
+                />
+            </Layout>
+        </>
     )
 }
 

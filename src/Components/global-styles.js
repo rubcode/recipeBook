@@ -27,7 +27,7 @@ const GlobalStylesStyled = createGlobalStyle`
         --colorFont: #111111;
     }
     body {
-        background-image: url("assets/bg-wood.jpg");
+        background-image: url("/assets/bg-wood.jpg");
         color: var(--black);
         font: var(--bodyRegular);
         margin: 0;
@@ -42,11 +42,11 @@ const GlobalStylesStyled = createGlobalStyle`
     }
     .title{
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-family: Roboto;
         color: var(--white);
         letter-spacing: 2px;
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 1rem;
         text-align: left;
         border-radius: 50px;
         background-color: var(--accentColor);

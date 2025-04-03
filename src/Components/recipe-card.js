@@ -35,7 +35,6 @@ const RecipeCardStyled = styled.div`
 `
 
 function RecipeCard({...props}) {
-    console.log(props)
     const path = 'Recipes/' + props.idRecipe
     return (
         <RecipeCardStyled key={props.idRecipe}>
