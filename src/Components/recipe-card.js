@@ -7,7 +7,6 @@ const RecipeCardStyled = styled.div`
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: 0.3s;
-    cursor: pointer;
     .box-img {
         width: 100%;
         height: 200px;
@@ -22,20 +21,29 @@ const RecipeCardStyled = styled.div`
         padding: 1rem;
         text-align: center;
     }
+    .box-info a{
+        text-decoration: none;
+    }
+    .box-info a:hover h2{
+        transform: scale(1.1);
+    }
     .box-info h2 {
         color: var(--accentColor);
         font-size: 1.2rem;
+        transition: all 0.3s;
     }
 `
 
 function RecipeCard({...props}) {
+    console.log(props)
+    const path = 'Recipes/' + props.idRecipe
     return (
-        <RecipeCardStyled key={props.key}>
+        <RecipeCardStyled key={props.idRecipe}>
             <div className='box-img'>
                 <img src={props.recipeImage} alt='Imagen de la receta' />
             </div>
             <div className='box-info'>
-                <h2>{props.recipeName}</h2>
+                <a href={path}><h2>{props.recipeName}</h2></a>            
             </div>
         </RecipeCardStyled>
     )

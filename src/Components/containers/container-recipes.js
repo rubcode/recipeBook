@@ -12,12 +12,11 @@ const ContainerRecipesStyled = styled.div`
 `
 
 function ContainerRecipes({recipes}) {
-    
     return (
         <ContainerRecipesStyled>
             {recipes.map(recipe => {
                 return <RecipeCard 
-                    key={recipe.id_recipe}
+                    idRecipe ={recipe.id_recipe}
                     recipeName={recipe.name_recipe}
                     recipeImage={recipe.url_image}
                  />

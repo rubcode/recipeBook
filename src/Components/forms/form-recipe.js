@@ -86,10 +86,11 @@ function FormRecipe({...props}) {
             />
             <Select name="idCategory" value={recipe.idCategory} onChange={handleChange}>
                 <option value=''>Selecciona una categoría</option>
-                <option value='4'>Bebida</option>
-                <option value='1'>Plato Fuerte</option>
-                <option value='3'>Postre</option>
-                <option value='2'>Sopa</option>
+                <option value='4'>Bebidas</option>
+                <option value='5'>Entradas</option>
+                <option value='1'>Fuertes</option>
+                <option value='3'>Postres</option>
+                <option value='2'>Sopas</option>
             </Select>
             <TextArea 
                 placeholder='Preparación de receta'
