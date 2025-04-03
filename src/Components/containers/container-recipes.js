@@ -7,7 +7,7 @@ const ContainerRecipesStyled = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
 `
 
