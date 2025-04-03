@@ -57,7 +57,6 @@ function FormRecipe({...props}) {
             console.log('Ocurrio un error al añadir la receta');
             return
         }
-        console.log(data);
         if(data.code === "000"){
             console.log('Receta añadida correctamente');
             props.setIdRecipe(data.idRecipe)
