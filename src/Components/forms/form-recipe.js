@@ -59,7 +59,7 @@ function FormRecipe({...props}) {
         }
         if(data.code === "000"){
             console.log('Receta añadida correctamente');
-            props.setIdRecipe(data.idRecipe)
+            props.setIdRecipe(data.id_recipe)
             form.current.reset()
         }
     }

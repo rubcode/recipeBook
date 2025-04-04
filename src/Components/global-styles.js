@@ -73,6 +73,15 @@ const GlobalStylesStyled = createGlobalStyle`
     .logo{
         width: 180px;
     }
+
+    @media (max-width: 600px) {
+        .title{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+    
+    }
 `
 
 

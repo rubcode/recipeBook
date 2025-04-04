@@ -46,8 +46,10 @@ function FormIngredient({...props}) {
             idRecipe: props.idRecipe,
             status: 1
         }
+        console.log(newIngredient);
         if(newIngredient.idRecipe !== 0){
             const {data, isError} = await addIngredients(newIngredient)
+            console.log(data);
             if(isError){
                 console.log('Ocurrio un error al añadir ingrediente');
                 return
@@ -55,7 +57,6 @@ function FormIngredient({...props}) {
             if(data.code === "000"){
                 console.log('Ingrendiente añadido correctamente');
                 form.current.reset()
-                return
             }
         }
         console.log('No se ha seleccionado una receta');

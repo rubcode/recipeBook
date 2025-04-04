@@ -67,6 +67,16 @@ const ContainerDetailsStyled = styled.div`
         line-height: 2rem;
         text-align: justify;
     }
+    @media (max-width: 600px) {
+        &{
+            width: 100%;
+        }
+        .box-title{
+            flex-direction: column-reverse;
+            gap: 1rem;
+        }
+    
+    }
 `
 
 function ContainerDetails({...props}) {

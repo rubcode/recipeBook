@@ -16,6 +16,13 @@ const ContainerFiltersStyled = styled.div`
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+        &{
+            justify-content: center;
+        }
+    
+    }
 `
 
 

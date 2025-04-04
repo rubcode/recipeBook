@@ -12,6 +12,13 @@ const Select = styled.select`
     font: var(--body2-regular);
     flex: 1;
     max-width: 250px;
+    @media (max-width: 600px) {
+        &{
+            width: 100%;
+            max-width: 100%;
+        }
+    
+    }
 `;
 
 export default Select;
