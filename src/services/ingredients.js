@@ -1,4 +1,4 @@
-const BASE_API = "http://127.0.0.1:8000/ingredients";
+const BASE_API = "https://apirecipebook-production.up.railway.app/ingredients";
 
 async function fetchHandler(url,options){
     const response = await fetch(url,options)

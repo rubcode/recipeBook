@@ -14,7 +14,7 @@ const NavStyled = styled.nav`
     }
     a{
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-decoration: none;
         font-weight: bold;
         transition: all 0.3s ease;
