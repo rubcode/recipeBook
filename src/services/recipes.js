@@ -1,4 +1,4 @@
-const BASE_API = "https://apirecipebook-production.up.railway.app/";
+const BASE_API = "https://apirecipebook-production.up.railway.app";
 
 async function fetchHandler(url,options){
     const response = await fetch(url,options)
